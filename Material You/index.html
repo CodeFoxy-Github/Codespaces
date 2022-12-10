@@ -3,7 +3,7 @@
   <head>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"
+      href="https://unpkg.com/mdui@1.0.2/dists/css/mdui.min.css"
     />
     <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
     <script
@@ -17,7 +17,11 @@
   </head>
   <body>
     
+  <div class="mdui-progress">
+  <div class="mdui-progress-indeterminate"></div>
+</div>
     <md-typo headline-medium="">Sign in</md-typo>
+    <br>
     
     <div id="emcsr">
       <md-text-field label="Email or phone" value=""></md-text-field>
@@ -31,12 +35,15 @@
         ></md-button>
       </h4>
     </div>
-
     <div id="nebpasw">
 
-      <md-text-field label="Email or phone" value=""></md-text-field>
+      <md-text-field type="password" label="Enter your password" value=""></md-text-field>
       <br />
-      <md-button text="" label="Forgot email?"></md-button>
+      <br />
+      <md-switch data-aria-label="check it!"><h5>Show password</h5></md-switch>
+<br>
+<Br>
+      <md-button text="" label="Forgot password?"></md-button>
 
       <script>
         
